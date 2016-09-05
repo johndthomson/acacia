@@ -1,5 +1,5 @@
 /*
-	Copyright 2016 Oleksandr Murashko, John Thomson
+    Copyright 2016 Oleksandr Murashko, John Thomson.
     This file is part of ACACIA Image Processing Tool.
 
     ACACIA is free software: you can redistribute it and/or modify
@@ -7,15 +7,15 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Foobar is distributed in the hope that it will be useful,
+    ACACIA is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with ACACIA.  If not, see <http://www.gnu.org/licenses/>.
-    
+    along with ACACIA. If not, see <http://www.gnu.org/licenses/>.
 */
+
 
 #include <QApplication>
 #include <QDesktopWidget>
@@ -49,6 +49,7 @@ int main(int argc, char *argv[])
     const unsigned long long int appStartTime = QDateTime::currentMSecsSinceEpoch();
     const QString appName = "acacia";
     const QString msgPref = "[" + appName + "] ";
+    const QString version = "0.17";
 
     // prepare for parsing arguments
     // note that QCoreApplication object is used only for argument parsing (no event loops in this console version)
@@ -77,7 +78,7 @@ int main(int argc, char *argv[])
         QString currentArgument = arguments.at(i);
 
         if (currentArgument == "-h" || currentArgument == "--help") {
-            QTextStream(stdout, QIODevice::WriteOnly) << "ACACIA image compression tool, version 0.16.\n"
+            QTextStream(stdout, QIODevice::WriteOnly) << "ACACIA image compression tool, version " << version << ".\n"
                                                       << "Program will run in GUI mode if no arguments specified.\n"
                                                       << "Command line usage: " << appName << " -jpeg|-webp -size|-mssim|-psnr <target_value> -i <input_image> -o <output_image> [-silent]\n"
                                                       << "Options:\n"

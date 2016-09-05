@@ -1,12 +1,12 @@
 # -------------------------------------------------------------------------------------------------
 #
 # ACACIA (Advanced content-adaptive compressor of images) is an image compression tool, which
-# encodes previously not compressed images trying to fit user requirements.
+# encodes previously not compressed images aiming to fit user requirements.
 #
 # This application provides both GUI and console interface for image compression with constraints.
 # It uses Qt4 library as well as libjpeg-turbo and libwebp libraries for JPEG and WebP formats.
 #
-# July 2016
+# Created July 2016.
 #
 # -------------------------------------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ QMAKE_CXXFLAGS += -std=c++11
 # To enable AVX instructions
 QMAKE_CXXFLAGS += -mavx -mavx2
 
-# To make GCC unroll the loops for feature extraction functions
+# To make GCC unroll loops in the feature extraction functions
 QMAKE_CXXFLAGS_RELEASE += -O3
 
 
@@ -65,8 +65,7 @@ QMAKE_CXXFLAGS_RELEASE += -O3
 #INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-gcc64/include"
 #QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-gcc64/lib"
 
-# - custom Linux installation
-
+# - for custom Linux installation
 INCLUDEPATH += "/opt/libjpeg-turbo/include"
 QMAKE_LIBDIR += "/opt/libjpeg-turbo/lib64"
 
