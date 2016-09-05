@@ -1,8 +1,8 @@
 # ACACIA
 
-<p>ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool that aims to speed up encoding into JPEG and WebP formats with a given file size or quality level.</p>
+ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool that aims to speed up encoding into JPEG and WebP formats with a given file size or quality level.
 
-<p>ACACIA is licensed under GPL3. It uses <it>Qt</it>, <it>libjpeg-turbo</it> and <it>libwebp</it> under their respective licenses.</p>
+ACACIA is licensed under GPL3. It uses *Qt*, *libjpeg-turbo* (or *libjpeg*) and *libwebp* under their respective licenses.
 
 <p>Current version: 0.17.</p>
 
@@ -21,18 +21,13 @@ To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpe
 
 -----
 
-To compile in Windows, Linux or OSX:
+To compile in Windows, Linux or OSX using Qt Creator:
 
 1. Install Qt developer tools with Qt Creator.
-
 2. Install external image compression libraries: libjpeg-turbo (may already be installed in Ubuntu) and libwebp.
-
-3. Open project file in Qt Creator.
-
-4. Change paths to image libraries in acacia.pro file.
-
+3. Open project file "acacia.pro" in Qt Creator.
+4. Change paths to image libraries in "acacia.pro" file according to your OS.
 5. Build project.
-
 6. Make sure all necessary external dynamic libraries can be located by application when it starts.
 
 -----
@@ -41,9 +36,7 @@ To build in Windows you can also use Visual Studio with installed "Qt Addin" plu
 
 -----
 
-To build in Linux without Qt Creator go to the project directory, change
-paths to image libraries in acacia.pro file and execute:
+To build in Linux without Qt Creator go to the project directory, change paths to image libraries in "acacia.pro" file and execute:
 
 > qmake acacia.pro
-
 > make
