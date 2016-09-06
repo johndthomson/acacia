@@ -4,7 +4,7 @@ ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression 
 
 ACACIA is licensed under GPL3. It uses *Qt*, *libjpeg-turbo* (or *libjpeg*) and *libwebp* under their respective licenses.
 
-<p>Current version: 0.17.</p>
+Current version: 0.17.
 
 <p>Contacts:</br>
 - John Thomson - john.thomson@gmail.com</br>
@@ -17,7 +17,7 @@ This version of the tool is designed to work with previously uncompressed images
 
 Alpha channel and images with high-contrast vector graphics are currently not supported.
 
-To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.2, libjpeg-turbo-1.4.2, libwebp-0.4.3.
+To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.7, libjpeg-turbo-1.4.2, libwebp-0.4.3. Also this program uses AVX and AVX2 vector instructions and requires a respective CPU to run.
 
 -----
 
@@ -37,6 +37,7 @@ To build in Windows you can also use Visual Studio with installed "Qt Addin" plu
 -----
 
 To build in Linux without Qt Creator go to the project directory, change paths to image libraries in "acacia.pro" file and execute:
-
-> qmake acacia.pro
-> make
+```
+qmake acacia.pro
+make
+```

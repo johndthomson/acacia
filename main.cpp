@@ -33,6 +33,9 @@
 
 int main(int argc, char *argv[])
 {
+    // set program version
+    const QString version = "0.17";
+
     // run GUI version if no arguments
     if (argc == 1)
     {
@@ -41,6 +44,7 @@ int main(int argc, char *argv[])
         MainWindow w;
         w.setFixedSize(w.size());
         w.move(QApplication::desktop()->screenGeometry().center() - w.rect().center());
+        w.setWindowTitle("ACACIA v" + version);
         w.show();
         return app.exec();
     }
@@ -49,7 +53,6 @@ int main(int argc, char *argv[])
     const unsigned long long int appStartTime = QDateTime::currentMSecsSinceEpoch();
     const QString appName = "acacia";
     const QString msgPref = "[" + appName + "] ";
-    const QString version = "0.17";
 
     // prepare for parsing arguments
     // note that QCoreApplication object is used only for argument parsing (no event loops in this console version)

@@ -44,7 +44,6 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
-
 # To allow constant class members and nullptr
 QMAKE_CXXFLAGS += -std=c++11
 
@@ -62,24 +61,28 @@ QMAKE_CXXFLAGS_RELEASE += -O3
 # A custom path to JPEG library can be specified below:
 
 # - for Windows
-#INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-gcc64/include"
-#QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-gcc64/lib"
+INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/include"
+QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/lib"
 
 # - for custom Linux installation
-INCLUDEPATH += "/opt/libjpeg-turbo/include"
-QMAKE_LIBDIR += "/opt/libjpeg-turbo/lib64"
+#INCLUDEPATH += "/opt/libjpeg-turbo/include"
+#QMAKE_LIBDIR += "/opt/libjpeg-turbo/lib64"
 
 LIBS += -ljpeg
 
+# Enable static linking for libjpeg. Disabled by default as it may cause conflicts with libjpeg integrated into Qt.
+#QMAKE_LFLAGS += -static
 
 
-# WebP library path
+
+# WebP library path:
+
 # - for Windows
-#INCLUDEPATH += "c:/.../libwebp-0.5.0-windows-x64-no-wic/include"
-#QMAKE_LIBDIR += "c:/.../libwebp-0.5.0-windows-x64-no-wic/lib"
+INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/include"
+QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/lib"
 
 # - for Linux and OSX
-INCLUDEPATH += "/.../libwebp-0.5.0-mac-10.9/include"
-QMAKE_LIBDIR += "/.../libwebp-0.5.0-mac-10.9/lib/"
+#INCLUDEPATH += "/.../libwebp-0.5.0-mac-10.9/include"
+#QMAKE_LIBDIR += "/.../libwebp-0.5.0-mac-10.9/lib/"
 
 LIBS += -lwebp
