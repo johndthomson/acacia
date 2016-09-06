@@ -7,8 +7,8 @@ ACACIA is licensed under GPL3. It uses *Qt*, *libjpeg-turbo* (or *libjpeg*) and 
 Current version: 0.17.
 
 <p>Contacts:</br>
-- John Thomson - john.thomson@gmail.com</br>
-- Oleksandr Murashko - om21@st-andrews.ac.uk</br>
+- John Thomson - john.thomson@gmail.com </br>
+- Oleksandr Murashko - om21@st-andrews.ac.uk </br>
 </p>
 
 This application has GUI and command line modes. If run without arguments it starts in GUI by default. Use "acacia --help" to see the list of command line options.
@@ -17,14 +17,14 @@ This version of the tool is designed to work with previously uncompressed images
 
 Alpha channel and images with high-contrast vector graphics are currently not supported.
 
-To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.7, libjpeg-turbo-1.4.2, libwebp-0.4.3. Also this program uses AVX and AVX2 vector instructions and requires a respective CPU to run.
+To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.7, libjpeg-turbo-1.5.0, libwebp-0.5.0. Also this program uses AVX and AVX2 vector instructions and requires a respective CPU to run.
 
 -----
 
 To compile in Windows, Linux or OSX using Qt Creator:
 
 1. Install Qt developer tools with Qt Creator.
-2. Install external image compression libraries: libjpeg-turbo (may already be installed in Ubuntu) and libwebp.
+2. Install external image compression libraries: [libjpeg-turbo](https://sourceforge.net/projects/libjpeg-turbo/files/) (may already be installed in Ubuntu) and [libwebp](https://developers.google.com/speed/webp/download).
 3. Open project file "acacia.pro" in Qt Creator.
 4. Change paths to image libraries in "acacia.pro" file according to your OS.
 5. Build project.
