@@ -6,8 +6,16 @@ ACACIA is licensed under GPL3. It uses *Qt*, *libjpeg-turbo* (or *libjpeg*) and 
 
 Current version: 0.17.
 
+ACACIA is free, open source software. An important aspect of all research is measuring and understanding the impact of research. If you use ACACIA or even just like it, please let us know at j.thomson@st-andrews.ac.uk. This helps us greatly in funding future research.
+If you use ACACIA in your research, please cite our paper describing the techniques used:
+
+Predicting and Optimizing Image Compression, In the Proceedings of the 2016 ACM on Multimedia Conference Pages 665-669
+http://dl.acm.org/citation.cfm?doid=2964284.2967305
+
+A preprint of the paper is available at http://jt.host.cs.st-andrews.ac.uk/
+
 <p>Contacts:</br>
-- John Thomson - john.thomson@gmail.com </br>
+- John Thomson - j.thomson@st-andrews.ac.uk </br>
 - Oleksandr Murashko - om21@st-andrews.ac.uk </br>
 </p>
 
@@ -41,3 +49,4 @@ To build in Linux without Qt Creator go to the project directory, change paths t
 qmake acacia.pro
 make
 ```
+
