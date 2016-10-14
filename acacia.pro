@@ -61,8 +61,8 @@ QMAKE_CXXFLAGS_RELEASE += -O3
 # A custom path to JPEG library can be specified below:
 
 # - for Windows
-INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/include"
-QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/lib"
+#INCLUDEPATH += "c:/SomeUserPath/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/include"
+#QMAKE_LIBDIR += "c:/SomeUserPath/Applications/Codecs/libjpeg-turbo-1.5.0-gcc64/lib"
 
 # - for custom Linux installation
 #INCLUDEPATH += "/opt/libjpeg-turbo/include"
@@ -78,8 +78,8 @@ LIBS += -ljpeg
 # WebP library path:
 
 # - for Windows
-INCLUDEPATH += "c:/Users/alexm/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/include"
-QMAKE_LIBDIR += "c:/Users/alexm/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/lib"
+#INCLUDEPATH += "c:/SomeUserPath/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/include"
+#QMAKE_LIBDIR += "c:/SomeUserPath/Applications/Codecs/libwebp-0.5.0-windows-x64-no-wic/lib"
 
 # - for Linux and OSX
 #INCLUDEPATH += "/.../libwebp-0.5.0-mac-10.9/include"

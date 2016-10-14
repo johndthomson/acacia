@@ -1,15 +1,20 @@
 # ACACIA
 
-ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool that aims to speed up encoding into JPEG and WebP formats with a given file size or quality level.
+ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool which allows the users to target specific image quality or file size metrics when compressing an image with JPEG or WebP, with only minimal additional compression time. It does this by using machine learning to predict how an individual image will be compressed, and adjusts the aggressiveness of compression accordingly. 
+
+ACACIA allows users to target compression to their file size or quality needs, significantly increasing the effectiveness of compression by adjusting to each individual image. It is available with a graphical interface, and with a CLI for batch processing.
 
 ACACIA is licensed under GPL3. It uses *Qt*, *libjpeg-turbo* (or *libjpeg*) and *libwebp* under their respective licenses.
 
 Current version: 0.17.
 
 ACACIA is free, open source software. An important aspect of all research is measuring and understanding the impact of research. If you use ACACIA or even just like it, please let us know at j.thomson@st-andrews.ac.uk. This helps us greatly in funding future research.
+
+If you would like to integrate ACACIA into your project (open source or otherwise) and would like to discuss a different licence, please get in touch.
+
 If you use ACACIA in your research, please cite our paper describing the techniques used:
 
-Predicting and Optimizing Image Compression, In the Proceedings of the 2016 ACM on Multimedia Conference Pages 665-669
+Predicting and Optimizing Image Compression, In the Proceedings of the 2016 ACM Conference on Multimedia, Pages 665-669
 http://dl.acm.org/citation.cfm?doid=2964284.2967305
 
 A preprint of the paper is available at http://jt.host.cs.st-andrews.ac.uk/
