@@ -28,6 +28,9 @@ This application has GUI and command line modes. If run without arguments it sta
 
 This version of the tool is designed to work with previously uncompressed images, obtained from a camera sensor, developed raw file, or from resizing a compressed image. If the supplied image has previously be compressed, it will still work, but might be less accurate. Support for previously compressed images is planned for later versions.
 
+A test set of images can be downloaded at: http://om21.host.cs.st-andrews.ac.uk/60_test_images_CC0.zip
+They are licensed under Creative Commons Zero - we are grateful to those generated them.
+
 Alpha channel and images with high-contrast vector graphics are currently not supported.
 
 To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.7, libjpeg-turbo-1.5.0, libwebp-0.5.0. Also this program uses AVX and AVX2 vector instructions and requires a respective CPU to run.
@@ -37,7 +40,7 @@ To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpe
 To compile in Windows, Linux or OSX using Qt Creator:
 
 1. Install Qt developer tools with Qt Creator.
-2. Install external image compression libraries: [libjpeg-turbo](https://sourceforge.net/projects/libjpeg-turbo/files/) (may already be installed in Ubuntu) and [libwebp](https://developers.google.com/speed/webp/download).
+2. Install external image compression libraries: [libjpeg-turbo](https://sourceforge.net/projects/libjpeg-turbo/files/) (may already be installed in your distribution) and [libwebp](https://developers.google.com/speed/webp/download).
 3. Open project file "acacia.pro" in Qt Creator.
 4. Change paths to image libraries in "acacia.pro" file according to your OS.
 5. Build project.
