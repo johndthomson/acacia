@@ -10,6 +10,8 @@ Current version: 0.17.
 
 ACACIA is free, open source software. An important aspect of all research is measuring and understanding the impact of research. If you use ACACIA or even just like it, please let us know at j.thomson@st-andrews.ac.uk. This helps us greatly in funding future research.
 
+ACACIA is not production software. Its primary purpose is to demonstrate research techniques.
+
 If you would like to integrate ACACIA into your project (open source or otherwise) and would like to discuss a different licence, please get in touch.
 
 If you use ACACIA in your research, please cite our paper describing the techniques used:
@@ -25,6 +27,8 @@ A preprint of the paper is available at http://jt.host.cs.st-andrews.ac.uk/
 </p>
 
 This application has GUI and command line modes. If run without arguments it starts in GUI by default. Use "acacia --help" to see the list of command line options.
+
+Note: Windows version GUI doesn't scale properly on 4k screens just now. 
 
 This version of the tool is designed to work with previously uncompressed images, obtained from a camera sensor, developed raw file, or from resizing a compressed image. If the supplied image has previously be compressed, it will still work, but might be less accurate. Support for previously compressed images is planned for later versions.
 
