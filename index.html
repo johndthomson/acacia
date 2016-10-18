@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Acacia by johndthomson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Acacia</h1>
+      <h2 class="project-tagline">Acacia (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool which allows the users to target specific image quality or file size metrics when compressing an image with JPEG or WebP, with only minimal additional compression time. It does this by using machine learning to predict how an individual image will be compressed, and adjusts the aggressiveness of compression accordingly.</h2>
+      <a href="https://github.com/johndthomson/acacia" class="btn">View on GitHub</a>
+      <a href="https://github.com/johndthomson/acacia/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/johndthomson/acacia/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="acacia" class="anchor" href="#acacia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACACIA</h1>
+
+<p>ACACIA (Advanced Content-Adaptive Compressor of ImAges) is an image compression tool which allows the users to target specific image quality or file size metrics when compressing an image with JPEG or WebP, with only minimal additional compression time. It does this by using machine learning to predict how an individual image will be compressed, and adjusts the aggressiveness of compression accordingly. </p>
+
+<p>ACACIA allows users to target compression to their file size or quality needs, significantly increasing the effectiveness of compression by adjusting to each individual image. It is available with a graphical interface, and with a CLI for batch processing.</p>
+
+<p>ACACIA is licensed under GPL3. It uses <em>Qt</em>, <em>libjpeg-turbo</em> (or <em>libjpeg</em>) and <em>libwebp</em> under their respective licenses.</p>
+
+<p>Current version: 0.17.</p>
+
+<p>ACACIA is free, open source software. An important aspect of all research is measuring and understanding the impact of research. If you use ACACIA or even just like it, please let us know at <a href="mailto:j.thomson@st-andrews.ac.uk">j.thomson@st-andrews.ac.uk</a>. This helps us greatly in funding future research.</p>
+
+<p>ACACIA is not production software. Its primary purpose is to demonstrate research techniques.</p>
+
+<p>If you would like to integrate ACACIA into your project (open source or otherwise) and would like to discuss a different licence, please get in touch.</p>
+
+<p>If you use ACACIA in your research, please cite our paper describing the techniques used:</p>
+
+<p>Predicting and Optimizing Image Compression, In the Proceedings of the 2016 ACM Conference on Multimedia, Pages 665-669
+<a href="http://dl.acm.org/citation.cfm?doid=2964284.2967305">http://dl.acm.org/citation.cfm?doid=2964284.2967305</a></p>
+
+<p>A preprint of the paper is available at <a href="http://jt.host.cs.st-andrews.ac.uk/">http://jt.host.cs.st-andrews.ac.uk/</a></p>
+
+<p>Contacts:
+- John Thomson - j.thomson@st-andrews.ac.uk 
+- Oleksandr Murashko - om21@st-andrews.ac.uk 
+</p>
+
+<p>This application has GUI and command line modes. If run without arguments it starts in GUI by default. Use "acacia --help" to see the list of command line options.</p>
+
+<p>Note: Windows version GUI doesn't scale properly on 4k screens just now. </p>
+
+<p>This version of the tool is designed to work with previously uncompressed images, obtained from a camera sensor, developed raw file, or from resizing a compressed image. If the supplied image has previously be compressed, it will still work, but might be less accurate. Support for previously compressed images is planned for later versions.</p>
+
+<p>A test set of images can be downloaded at: <a href="http://om21.host.cs.st-andrews.ac.uk/60_test_images_CC0.zip">http://om21.host.cs.st-andrews.ac.uk/60_test_images_CC0.zip</a>
+They are licensed under Creative Commons Zero - we are grateful to those generated them.</p>
+
+<p>Alpha channel and images with high-contrast vector graphics are currently not supported.</p>
+
+<p>To compile and run ACACIA you need Qt library (mainly for GUI) as well as libjpeg and libwebp. This version was tested with the following external libraries: qt-4.8.7, libjpeg-turbo-1.5.0, libwebp-0.5.0. Also this program uses AVX and AVX2 vector instructions and requires a respective CPU to run.</p>
+
+<hr>
+
+<p>To compile in Windows, Linux or OSX using Qt Creator:</p>
+
+<ol>
+<li>Install Qt developer tools with Qt Creator.</li>
+<li>Install external image compression libraries: <a href="https://sourceforge.net/projects/libjpeg-turbo/files/">libjpeg-turbo</a> (may already be installed in your distribution) and <a href="https://developers.google.com/speed/webp/download">libwebp</a>.</li>
+<li>Open project file "acacia.pro" in Qt Creator.</li>
+<li>Change paths to image libraries in "acacia.pro" file according to your OS.</li>
+<li>Build project.</li>
+<li>Make sure all necessary external dynamic libraries can be located by application when it starts.</li>
+</ol>
+
+<hr>
+
+<p>To build in Windows you can also use Visual Studio with installed "Qt Addin" plugin. You may need to copy some external libraries (like Qt and libjpeg dll's) alongside the executable to run it - if they are not present in the Windows PATH.</p>
+
+<hr>
+
+<p>To build in Linux without Qt Creator go to the project directory, change paths to image libraries in "acacia.pro" file and execute:</p>
+
+<pre><code>qmake acacia.pro
+make
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/johndthomson/acacia">Acacia</a> is maintained by <a href="https://github.com/johndthomson">johndthomson</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
