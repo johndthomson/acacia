@@ -61,4 +61,7 @@ To build in Linux without Qt Creator go to the project directory, change paths t
 qmake acacia.pro
 make
 ```
+[![Analytics](https://ga-beacon.appspot.com/UA-85883244-1/githubhome)](https://github.com/johndthomson/acacia/)
+
+
 
